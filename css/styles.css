@@ -41,7 +41,6 @@ a {
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 main {
-    /*max-width: 1200px;*/
     margin: auto;
     overflow-y: scroll;
     height: calc(100vh - 90px); 
@@ -96,7 +95,7 @@ p, ul {
 
 #menu {
     width: 65%;
-    height: 45%;
+    height: 5vw; /*45%;*/
     background-color: #af599e;
     font-size: 40%;
     border-radius: 5px;
