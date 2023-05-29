@@ -1,0 +1,252 @@
+/* CSS para dispositivos móbiles*/
+/* en @media esta el CSS para Desktop */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&display=swap');
+
+
+html {
+    background-color: #fbfbfb;
+    font-size: 2.5vw;
+    min-font-size: 18px; /* Tamaño de letra base para dispositivos móviles */
+    max-font-size: 36px; /* Tamaño de letra base para Desktop */
+}
+
+ 
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    /*max-width: 1200px;*/
+    margin: auto;
+    overflow-y: scroll;
+    height: calc(100vh - 90px); 
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+body {
+    margin-top: 90px; 
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    max-height: 15vh;
+    display: flex;
+    justify-content: space-around;;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+h1 {
+    font-size: 100%;
+}
+h2 {
+    text-align: center;
+    font-size: 78%;
+    padding-bottom: 10px;
+}
+
+p, ul {
+    font-size: 50%;    
+}
+#logo {
+    font-family: 'Satisfy', cursive;
+    font-size: 100%;
+}
+
+
+
+#div1 {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center; 
+    line-height: 2rem; /*35px;*/
+    width: 35%;
+}
+
+#menu {
+    width: 65%;
+    height: 45%;
+    background-color: #af599e;
+    font-size: 40%;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.menuop {
+    display:inline-block;
+    background: rgba(153, 204, 255, 0.5);
+    color: white;
+    padding: 1.2% 1%;
+    border-radius: 5px;
+}
+
+.menuop:hover {
+    background: #d8d8da;
+    color: black;
+}
+#div2{
+    display: flex;
+    justify-content: center;
+}
+
+#foto{
+    width: 350px;
+    border-radius: 50%
+}
+
+#Inicio {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#Inicio > #Soy {
+    padding-right: 10px;
+    padding-bottom: 7px;
+}
+
+article {
+    margin: 10px 0;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#af599e;
+    color: #fbfbfb;
+    font-weight: bold;
+    font-size: 56%;
+    border-radius: 25px;
+}
+  
+.boton:hover {
+    color: #000;
+}
+
+
+.icono {
+    width: 20px;
+    height: 20px;
+}
+
+.Art1, .Art2 {
+    border-radius: 25px;
+    color: #0f0f0f;
+    padding: 20px;   
+}
+
+.Art1 {
+    background-color:rgba(175, 89, 158, 0.3);
+}
+.Art2 {
+    background-color:rgba(153, 204, 255, 0.5);
+}
+
+/* este span lo uso para simular el efecto de un tab en las seccións Cursos y seminarios 1 y 2
+   como es el único span que utilizo, no le coloqué una class o un id*/
+span {   
+    display: inline-block;
+    width: 4vw;
+  }
+
+#Publicaciones > ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #af599e;
+    color: #fbfbfb; 
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50%;
+    border-radius: 25px 25px 0 0;
+} 
+
+#foot1{
+    width: 100%;
+    display:flex;
+    justify-content:space-around; 
+    align-items: center;
+}
+#foot2{
+    display:flex;
+    flex-direction:row;
+    justify-content:sp center;
+    align-items: center;
+}
+#foot2 > h5 {
+    margin-left: 5px;
+}
+
+
+@media (min-width: 768px) {
+    
+    header  #menu {
+        height: 60%;
+    }
+
+    header  #menu  .menuop {
+        padding: 0.5% 1%;
+    }
+
+    main #desktop1 {
+        display:flex;
+    } 
+    main #desktop2 {
+        margin-left: 1%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+
+    }     
+     
+    main footer {
+        height: 90px;
+        flex-direction: row;
+    }
+
+    main  footer  .icono {
+        width: 45px;
+        height: 45px;
+    }
+
+  }
