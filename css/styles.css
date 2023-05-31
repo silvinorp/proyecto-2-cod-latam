@@ -95,7 +95,7 @@ p, ul {
 
 #menu {
     width: 65%;
-    height: 5vw; /*45%;*/
+    height: 100px; /*5vw; 45%;*/
     background-color: #af599e;
     font-size: 40%;
     border-radius: 5px;
@@ -248,4 +248,30 @@ footer {
         height: 45px;
     }
 
+  }
+
+  .submenuop {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+
+  .menuop1:hover .submenuop {
+    display: block;
+    background: rgba(153, 204, 255, 0.5);
+  }
+  .menuop1:hover {
+    background: rgba(153, 204, 255, 0.5);
+  }
+  .submenuop a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .submenuop a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
   }
