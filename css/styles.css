@@ -108,7 +108,7 @@ p, ul {
     display:inline-block;
     background: rgba(153, 204, 255, 0.5);
     color: white;
-    padding: 1% 1%;
+    padding: 0.5vw 0.5vw; /*1% 1%;*/
     border-radius: 5px;
 }
 
@@ -129,18 +129,18 @@ p, ul {
 
 .menuop1:hover .submenuop {
     display: block;
-    background: #d8d8da; /* rgba(153, 204, 255, 0.5);*/
+    background: rgba(4, 128, 252, 0.5);
 }
 
 .submenuop a {
     display: block;
-    color: #000000;
+    color: #FFFFFF;
     padding: 5px;
     text-decoration: none;
 }
 .submenuop a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
+    color: #000000;
+    background-color: #d8d8da;
 }
 
 #div2{
@@ -254,13 +254,13 @@ footer {
 
 @media (min-width: 768px) {
     
-    header  #menu {
+    /*header  #menu {
         height: 60%;
     }
 
     header #menu .menuop, .menuop1 > a {
         padding: 0.5% 1%;
-    }
+    }*/
 
     main #desktop1 {
         display:flex;
