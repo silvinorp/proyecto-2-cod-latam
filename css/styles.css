@@ -20,10 +20,9 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    line-height: 1.2;
+    line-height: 1.5;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
-
 }
 
 /* Para quitar los puntos a los items de listas */
@@ -118,19 +117,19 @@ p, ul {
     color: black;
 }
 
-
-
 .submenuop {
     display: none;
     position: absolute;
     /* width: 100%; */
+    margin-top: 1px;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    border-radius: 5px;
 }
 
 .menuop1:hover .submenuop {
     display: block;
-    background: rgba(153, 204, 255, 0.5);
+    background: #d8d8da; /* rgba(153, 204, 255, 0.5);*/
 }
 
 .submenuop a {
@@ -185,8 +184,8 @@ article {
 
 
 .icono {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .Art1, .Art2 {
@@ -200,6 +199,15 @@ article {
 }
 .Art2 {
     background-color:rgba(153, 204, 255, 0.5);
+}
+
+
+/* Si el texto en los elementos de lista es demasiado largo y supera el tamaño del contenedor, 
+   se truncarel texto y reemplazar el exceso con tres puntos (...)  */ 
+li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* este span lo uso para simular el efecto de un tab en las seccións Cursos y seminarios 1 y 2
@@ -251,7 +259,7 @@ footer {
     }
 
     header #menu .menuop, .menuop1 > a {
-        padding: 1% 1%;
+        padding: 0.5% 1%;
     }
 
     main #desktop1 {
