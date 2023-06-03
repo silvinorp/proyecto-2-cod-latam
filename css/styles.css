@@ -95,7 +95,7 @@ p, ul {
 
 #menu {
     width: 65%;
-    height: 100px; /*5vw; 45%;*/
+    height: 5.6vw; /*45%;*/
     background-color: #af599e;
     font-size: 40%;
     border-radius: 5px;
@@ -105,11 +105,11 @@ p, ul {
     align-items: center;
 }
 
-.menuop {
+.menuop, .menuop1 > a {
     display:inline-block;
     background: rgba(153, 204, 255, 0.5);
     color: white;
-    padding: 1.2% 1%;
+    padding: 1% 1%;
     border-radius: 5px;
 }
 
@@ -117,6 +117,33 @@ p, ul {
     background: #d8d8da;
     color: black;
 }
+
+
+
+.submenuop {
+    display: none;
+    position: absolute;
+    /* width: 100%; */
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.menuop1:hover .submenuop {
+    display: block;
+    background: rgba(153, 204, 255, 0.5);
+}
+
+.submenuop a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.submenuop a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
 #div2{
     display: flex;
     justify-content: center;
@@ -223,8 +250,8 @@ footer {
         height: 60%;
     }
 
-    header  #menu  .menuop {
-        padding: 0.5% 1%;
+    header #menu .menuop, .menuop1 > a {
+        padding: 1% 1%;
     }
 
     main #desktop1 {
@@ -248,30 +275,4 @@ footer {
         height: 45px;
     }
 
-  }
-
-  .submenuop {
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  }
-
-  .menuop1:hover .submenuop {
-    display: block;
-    background: rgba(153, 204, 255, 0.5);
-  }
-  .menuop1:hover {
-    background: rgba(153, 204, 255, 0.5);
-  }
-  .submenuop a {
-    display: block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-  }
-  .submenuop a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
   }
