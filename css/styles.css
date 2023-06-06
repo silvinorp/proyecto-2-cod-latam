@@ -6,8 +6,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&display=swap');
 
 
-html {
+/* Estilos para el modo Día */
+html.modoDia {
     background-color: #fbfbfb;
+    color: #000000;
+}
+  
+/* Estilos para el modo Noche */
+html.modoNoche {
+    background-color: #121212;
+    color: #fbfbfb;
+}
+/* Botón modo Día Noche */
+#modoDiaNoche {
+    background-image: url("../css/iconos/dia.png");
+    background-size: cover;
+    border: none;
+    background-repeat: no-repeat;  
+    background-color:transparent;
+    width: 3vw;
+    height: 3vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+
+html {
+    /*background-color: #fbfbfb;*/
     font-size: 2.5vw;
     min-font-size: 18px; /* Tamaño de letra base para dispositivos móviles */
     max-font-size: 36px; /* Tamaño de letra base para Desktop */
@@ -36,9 +61,6 @@ a {
     color: inherit;
 }
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
 main {
     margin: auto;
     overflow-y: scroll;
@@ -120,7 +142,6 @@ p, ul {
 .submenuop {
     display: none;
     position: absolute;
-    /* width: 100%; */
     margin-top: 1px;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
@@ -149,7 +170,7 @@ p, ul {
 }
 
 #foto{
-    width: 350px;
+    width: 300px;
     border-radius: 50%
 }
 
@@ -160,8 +181,8 @@ p, ul {
 }
 
 #Inicio > #Soy {
-    padding-right: 10px;
-    padding-bottom: 7px;
+    padding-right: 1vw;
+    padding-bottom: 0.5vw;
 }
 
 article {
@@ -190,7 +211,7 @@ article {
 
 .Art1, .Art2 {
     border-radius: 25px;
-    color: #0f0f0f;
+    /*color: #0f0f0f;*/
     padding: 20px;   
 }
 
