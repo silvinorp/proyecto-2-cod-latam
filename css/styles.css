@@ -205,13 +205,12 @@ article {
 
 
 .icono {
-    width: 15px;
-    height: 15px;
+    width: 3vw; /*15px;*/
+    /*height: 90%; 15px;*/
 }
 
 .Art1, .Art2 {
     border-radius: 25px;
-    /*color: #0f0f0f;*/
     padding: 20px;   
 }
 
@@ -244,10 +243,10 @@ span {
 }
 
 footer {
-    height: 50px;
+    height: 7vw;
     width: 100%;
     background-color: #af599e;
-    color: #fbfbfb; 
+    color: #fbfbfb;
     display: flex;
     flex-direction:column;
     justify-content: space-around;
@@ -257,9 +256,10 @@ footer {
 } 
 
 #foot1{
+    height: 90%;
     width: 100%;
     display:flex;
-    justify-content:space-around; 
+    justify-content:space-around;
     align-items: center;
 }
 #foot2{
@@ -270,6 +270,7 @@ footer {
 }
 #foot2 > h5 {
     margin-left: 5px;
+    /*display:none;*/
 }
 
 
@@ -295,13 +296,13 @@ footer {
     }     
      
     main footer {
-        height: 90px;
+        height: 5vw;
         flex-direction: row;
     }
 
-    main  footer  .icono {
+    /*main  footer  .icono {
         width: 45px;
         height: 45px;
-    }
+    }*/
 
   }
