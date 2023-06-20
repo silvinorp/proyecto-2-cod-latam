@@ -170,7 +170,8 @@ p, ul {
 }
 
 #foto{
-    width: 300px;
+    width: 40vw;
+    height: 45vw;
     border-radius: 50%
 }
 
@@ -203,14 +204,13 @@ article {
     color: #000;
 }
 
-
 .icono {
     width: 3vw; /*15px;*/
     /*height: 90%; 15px;*/
 }
 
 .Art1, .Art2 {
-    border-radius: 25px;
+    border-radius: 2vw;
     padding: 2vw;   
 }
 
