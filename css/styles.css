@@ -96,7 +96,7 @@ h2 {
 }
 
 p, ul {
-    font-size: 50%;    
+    font-size: 60%;    
 }
 #logo {
     font-family: 'Satisfy', cursive;
@@ -191,7 +191,7 @@ article {
 
 .boton {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1vw 2vw;
     background-color:#af599e;
     color: #fbfbfb;
     font-weight: bold;
@@ -211,7 +211,7 @@ article {
 
 .Art1, .Art2 {
     border-radius: 25px;
-    padding: 20px;   
+    padding: 2vw;   
 }
 
 .Art1 {
@@ -234,7 +234,7 @@ li {
    como es el único span que utilizo, no le coloqué una class o un id*/
 span {   
     display: inline-block;
-    width: 4vw;
+    width: 4.5vw;
   }
 
 #Publicaciones > ul {
@@ -243,16 +243,17 @@ span {
 }
 
 footer {
-    height: 7vw;
+    height: 8vw;
     width: 100%;
     background-color: #af599e;
     color: #fbfbfb;
     display: flex;
     flex-direction:column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-size: 50%;
     border-radius: 25px 25px 0 0;
+    padding: 5px;
 } 
 
 #foot1{
@@ -261,6 +262,7 @@ footer {
     display:flex;
     justify-content:space-around;
     align-items: center;
+    /*padding: 10px;*/
 }
 #foot2{
     display:flex;
